@@ -16,53 +16,13 @@ import webbrowser
 def get_connection():
     conn=psycopg2.connect(
         host="localhost",
-        dbname="smart_city_project",
-        user="Muhammad_Ishaq",
-        password="ishaq156"
+        dbname="db_name",
+        user="Username",
+        password="User_Password"
     )
     return conn
 conn=get_connection()
 cur=conn.cursor()
-
-#Add Location In Map Button Window....................................
-# def add_location_window(self):
-
-#         self.window=CTk()
-#         self.window.title("City Selection and Map")
-#         self.window.geometry("500x400")
-#         set_appearance_mode("dark")
-#         set_default_color_theme("blue")
-
-#         map=self.pre_avaliable_cties()
-
-#         self.map_combo=CTkComboBox(self.window,values=map,width=350,height=20,bg_color="#1a1a1a",text_color="white",font=("Times New Roman",20,"bold"),border_color="white")
-#         self.map_combo.pack(pady=10)
-#         self.map_combo.set("Select a city")
-
-#         self.loc_name=CTkEntry(self.window,placeholder_text="Enter the name of the location",width=350,height=20,bg_color="#1a1a1a",text_color="white",font=("Times New Roman",20,"bold"),border_color="white")
-#         self.loc_name.pack(pady=8)
-#         self.loc_latitude=CTkEntry(self.window,placeholder_text="Enter the latitude of location",width=350,height=20,bg_color="#1a1a1a",text_color="white",font=("Times New Roman",20,"bold"),border_color="white")
-#         self.loc_latitude.pack(pady=8)
-#         self.loc_longitude=CTkEntry(self.window,placeholder_text="Enter the longitude of location",width=350,height=20,bg_color="#1a1a1a",text_color="white",font=("Times New Roman",20,"bold"),border_color="white")
-#         self.loc_longitude.pack(pady=8)
-#         CTkButton(self.window,command=self.add_location_in_db,text="Add Location",fg_color="#0984e3",hover_color="#74b9ff",text_color="white",width=220,height=40,corner_radius=10).pack(pady=8)
-
-
-# #Generate Route Map Button Window.....................................
-# def Generate_Route(self):
-#         self.window=CTk()
-#         self.window.title("Generate Route Map")
-#         self.window.geometry("500x400")
-#         set_appearance_mode("dark")
-#         set_default_color_theme("blue")
-
-#         cities=self.pre_avaliable_cties()
-
-#         self.map_combo=CTkComboBox(self.window,values=cities,width=350,height=20,bg_color="#1a1a1a",text_color="white",font=("Times New Roman",20,"bold"),border_color="white")
-#         self.map_combo.pack(pady=10)
-#         self.map_combo.set("Select a city")
-
-#         CTkButton(self.window,text="Generate",command=lambda: self.generate_map(self.map_combo.get()),fg_color="#0984e3",hover_color="#74b9ff",text_color="white",width=220,height=40,corner_radius=10).pack(pady=8)
 
 # Functions...........................................................
 
