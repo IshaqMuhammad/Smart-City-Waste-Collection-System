@@ -1,0 +1,7 @@
+streamlit
+folium
+numpy
+networkx
+osmnx
+psycopg2
+tkinter
