@@ -13,6 +13,17 @@ The aim is to reduce travel distance/time for waste-collection vehicles, thereby
 - GUI / command line interface (depending on implementation) to visualise or output the route  
 - Database sync / persistent storage of graph data (via SQL script)  
 
+##  📸  Screenshots
+<div align="center">
+  <img src="images/home.png" />
+</div>
+<div align="center">
+  <img src="images/map_gen.png" width='550' />
+</div>
+<div align="center">
+  <img src="images/final_map.png" width='550' />
+</div>
+
 ## 📋 Requirements  
 - Python 3.x  
 - Required Python modules (given in requirment.txt):  
